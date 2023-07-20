@@ -95,7 +95,15 @@ body {
     transform: translateX(60px) translateZ(-50px) rotateY(10deg);
     background-image: url(https://cdn4.iconfinder.com/data/icons/business-finance-line-art-1/128/crm-512.png);
   }
-  
+  .righter a {
+    display: block;
+    /* Defina o tamanho da imagem de fundo aqui */
+    width: 200px;
+    height: 100px;
+    /* Defina a imagem de fundo aqui */
+   
+    background-size: cover;
+  }
 
   .explainer {
     font-weight: 300;
