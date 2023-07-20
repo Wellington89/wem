@@ -5,7 +5,7 @@ body {
     background-repeat: no-repeat;
     height: 100vh;
     overflow: hidden;
-    display: flex;
+    display: block;
     justify-content: center;
     align-items: center;
   
@@ -77,24 +77,26 @@ body {
   }
   .lefter {
     transform: translateX(-60px) translateZ(-50px) rotateY(-10deg);
-    background-image: url(https://cdn3.iconfinder.com/data/icons/other-icons/48/organization-512.png);
+    background-image: url(https://cdn4.iconfinder.com/data/icons/designer/128/11-512.png);
   }
   .left {
     transform: translateX(-30px) translateZ(-25px) rotateY(-5deg);
-    background-image: url(https://cdn3.iconfinder.com/data/icons/other-icons/48/creative_draw-512.png);
+    background-image: url(https://cdn2.iconfinder.com/data/icons/popicon-part-1/256/03-512.png);
   }
   .center {
     opacity: 1;
-    background-image: url(https://cdn3.iconfinder.com/data/icons/other-icons/48/app_window-512.png);
+    background-image: url(https://cdn0.iconfinder.com/data/icons/support-2/128/8-512.png);
   }
   .right {
     transform: translateX(30px) translateZ(-25px) rotateY(5deg);
-    background-image: url(https://cdn3.iconfinder.com/data/icons/other-icons/48/cloud_weather-512.png);
+    background-image: url(https://cdn4.iconfinder.com/data/icons/marketing-and-digital-marketing/32/business_marketing_advertising_mission-512.png);
   }
   .righter {
     transform: translateX(60px) translateZ(-50px) rotateY(10deg);
-    background-image: url(https://cdn3.iconfinder.com/data/icons/other-icons/48/search-512.png);
+    background-image: url(https://cdn4.iconfinder.com/data/icons/business-finance-line-art-1/128/crm-512.png);
   }
+  
+
   .explainer {
     font-weight: 300;
     font-size: 2rem;
@@ -128,7 +130,9 @@ body {
       font-size: 12px;
     }
   }
-  
+  #canvas{
+    margin-top: 150px;
+  }
 
   /*BACKGROUND*/
   html {
@@ -145,4 +149,38 @@ body {
     repeating-conic-gradient(var(--c) 0 25%,#0000 0 50%) 0 0/var(--_s), 
     radial-gradient(var(--_c)) 0 calc(var(--s)/2)/var(--s) var(--s) var(--c);
   background-attachment: fixed;
+}
+
+
+
+
+.menu {
+  display: flex;
+  justify-content: center; /* Centraliza os itens horizontalmente */
+  align-items: center;
+  background-color: transparent;
+  color: #fff;
+  padding: 10px;
+}
+
+.logo {
+  width: 150px;
+  cursor: pointer;
+}
+
+.hora-brasilia {
+  margin: 0;
+  font-size: 26px;
+}
+
+.categoria {
+  color: #fff;
+  text-decoration: none;
+  padding: 10px 10px;
+  border-radius: 15px;
+  background-color: #0056b3;
+}
+
+.categoria:hover {
+  background-color: #ab01c2;
 }
