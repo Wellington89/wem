@@ -7,8 +7,38 @@ html {
   button {
 	padding: 10px 20px;
 	font-size: 16px;
-	background-color: #4CAF50;
+	background-color: #984caf;
 	color: white;
 	border: none;
 	cursor: pointer;
   }
+
+  .top {
+	/* Defina uma largura máxima para centralizar o conteúdo na tela */
+	max-width: 800px;
+	margin: 0 auto; /* Isso centraliza o conteúdo horizontalmente na tela */
+	padding: 10px; /* Opcional: adicione preenchimento para espaçamento */
+  }
+  
+  img {
+	/* Adicione margem à direita para separar a imagem do botão */
+	margin-right: 10px;
+  }
+  
+  button {
+	/* Utilize a propriedade float para alinhar o botão à direita */
+	float: right;
+	/* Opcional: adicione margem superior para alinhar verticalmente com a imagem */
+	margin-top: 80px;
+  }
+
+  #iframe-container{
+	margin: 20px;
+  }
+  .container {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 100%;
+  }
+  
