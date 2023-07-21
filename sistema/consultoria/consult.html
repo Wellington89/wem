@@ -1,0 +1,65 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="consult.css">
+    <title>CRM</title>
+</head>
+<body>
+    
+
+<div class="menu">
+    <a href="#">
+      <img src="https://wellington89.github.io/apresentacao/assets/6771586_book_courses_education_learning_school_icon.png" alt="Cursos" class="logo" style="position: relative; left: -64px; transition: none 0s ease 0s; cursor: pointer;">
+    </a>
+    
+    <!------------------------------------------------------------RELÓGIO HORÁRIO DE BRASÍLIA------------------------------------------------------------>  
+    <style>
+        /* Estilos para o relógio */
+        #relogio {
+            font-size: 32px;
+            font-weight: bold;
+            color: #ffffff;
+        }
+    </style>
+
+    <div id="relogio">Carregando...</div>
+
+    <script>
+        // Função para obter o horário atual de Brasília
+        function atualizarRelogio() {
+            var dataAtual = new Date();
+            var fusoHorario = -3; // Fuso horário de Brasília é UTC-3
+            dataAtual.setUTCMinutes(dataAtual.getUTCMinutes() + fusoHorario * 60);
+
+            var horas = String(dataAtual.getUTCHours()).padStart(2, '0');
+            var minutos = String(dataAtual.getUTCMinutes()).padStart(2, '0');
+            var segundos = String(dataAtual.getUTCSeconds()).padStart(2, '0');
+
+            var horarioBrasilia = horas + ':' + minutos + ':' + segundos;
+            document.getElementById('relogio').textContent = horarioBrasilia;
+        }
+
+        // Atualiza o relógio a cada segundo
+        setInterval(atualizarRelogio, 1000);
+
+        // Chama a função para exibir o horário atual assim que a página carrega
+        atualizarRelogio();
+    </script>
+    <!------------------------------------------------------------RELÓGIO HORÁRIO DE BRASÍLIA------------------------------------------------------------>  
+
+      <a href="https://wellington89.github.io/apresentacao/pagina2.html" class="categoria" style="position: relative; left: 75px;"
+      >Página inicial</a>
+    </div>
+    
+    
+    
+    
+    <iframe src="https://wemtecma.nifty.pm/l/EvovCealoLa7Z?pub" width="100%" height="100%">
+        
+   
+
+</body>
+</html>
