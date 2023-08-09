@@ -1,14 +1,16 @@
-function abrirAba(aba) {
-    // Esconder todos os conteúdos das abas
-    const conteudos = document.querySelectorAll(".conteudo");
-    for (const conteudo of conteudos) {
-      conteudo.style.display = "none";
-    }
-  
-    // Mostrar o conteúdo da aba selecionada
-    const conteudoAba = document.getElementById(aba);
-    if (conteudoAba) {
-      conteudoAba.style.display = "block";
-    }
+function openTab(evt, tabName) {
+  var i, tabcontent, tablinks;
+
+  tabcontent = document.getElementsByClassName("tabcontent");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
   }
-  
+
+  tablinks = document.getElementsByClassName("tablinks");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].classList.remove("active");
+  }
+
+  document.getElementById(tabName).style.display = "block";
+  evt.currentTarget.classList.add("active");
+}

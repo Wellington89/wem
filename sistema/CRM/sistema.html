@@ -11,116 +11,99 @@
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-<link rel="stylesheet" href="estilo.css">
+<link rel="stylesheet" href="sistema.css">
 </head>
 <body>
 
-<div class="tabs">
-  <button class="tab" onclick="abrirAba('afiliabrasil')">Afiliabrasil</button>
-  <button class="tab" onclick="abrirAba('afiliagringa')">Afiliagringa</button>
-  <button class="tab" onclick="abrirAba('prospect')">Prospect</button>
-  <button class="tab" onclick="abrirAba('work')">Work</button>
-</div>
+  <div class="container">
+    <div class="menu">
+      <div class="logo">
+        <a href="">
 
-<div class="conteudo" id="afiliabrasil">
-  <h2>Passo 1 - Afiliabrasil</h2>
-
-  <!-- SELECIONE O PRODUTO OU SERVIÇO -->
-  <!-- Button trigger modal -->
-  <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
-    Escolha o produto ou serviço
-  </button>
-
-  <!-- Modal -->
-  <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
-    <div class="modal-dialog">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h5 class="modal-title" id="staticBackdropLabel">Modal title</h5>
-          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-        </div>
-
-        <div class="modal-body">
-          <h5>Popover in a modal</h5>
-          <p>This <a href="#" role="button" class="btn btn-secondary popover-test" title="Popover title" data-bs-content="Popover body content is set in this attribute.">button</a> triggers a popover on click.</p>
-          <hr>
-          <h5>Tooltips in a modal</h5>
-          <p><a href="#" class="tooltip-test" title="Tooltip">This link</a> and <a href="#" class="tooltip-test" title="Tooltip">that link</a> have tooltips on hover.</p>
-        </div>
-
-        <div class="modal-footer">
-          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-          <button type="button" class="btn btn-primary">Understood</button>
-        </div>
-      </div>
+          <img src="casa.png" alt="Logo">
+        </a>
     </div>
-  </div>
-  <!-- SELECIONE O PRODUTO OU SERVIÇO -->
-
-  <h2>Passo 2 - Afiliabrasil</h2>
-  <p>Estratégia de vendas</p>
-  <h2>Passo 3 - Afiliabrasil</h2>
-  <p>Tráfego de vendas</p>
-  <h2>Passo 4 - Afiliabrasil</h2>
-  <p>Automação de vendas</p>
-  <h2>Passo 5 - Afiliabrasil</h2>
-  <p>Campanha</p>
-  <!-- Adicione mais passos, se necessário -->
-</div>
-
-<div class="conteudo" id="afiliagringa" style="display: none;">
-  <h2>Passo 1 - Afiliagringa</h2>
-  <p>Escolha o produto ou serviço</p>
-  <h2>Passo 2 - Afiliagringa</h2>
-  <p>Estratégia de vendas</p>
-  <h2>Passo 3 - Afiliagringa</h2>
-  <p>Tráfego de vendas</p>
-  <h2>Passo 4 - Afiliagringa</h2>
-  <p>Automação de vendas</p>
-  <h2>Passo 5 - Afiliagringa</h2>
-  <p>Campanha</p>
-  <!-- Adicione mais passos, se necessário -->
-</div>
-
-<div class="conteudo" id="prospect" style="display: none;">
-  <h2>Passo 1 - Prospect</h2>
-  <p>Escolha o nicho ou serviço</p>
-  <h2>Passo 2 - Prospect</h2>
-  <p>Encontre o publico ideal</p>
-  <h2>Passo 3 - Prospect</h2>
-  <p>Identifique os potenciais clientes</p>
-  <h2>Passo 4 - Prospect</h2>
-  <p>Crie a proposta de venda</p>
-  <h2>Passo 5 - Prospect</h2>
-  <p>Faça o script</p>
-  <h2>Passo 6 - Prospect</h2>
-  <p>Envie o script</p>
-  <h2>Passo 7 - Prospect</h2>
-  <p>Crie automações de vendas</p>
-  <h2>Passo 8 - Prospect</h2>
-  <p>Faça follow-up</p>
-  <h2>Passo 9 - Prospect</h2>
-  <p>Marque uma conversa</p>
-  <!-- Adicione mais passos, se necessário -->
-</div>
-
-<div class="conteudo" id="work" style="display: none;">
-  <h2>Passo 1 - Work</h2>
-  <p>Escolha o serviço</p>
-  <h2>Passo 2 - Work</h2>
-  <p>Busque a melhor oportunidade</p>
-  <H2>Passo 3 - Work</h2>
-  <p>Identifique os potenciais clientes</p>
-  <h2>Passo 4 - Work</h2>
-  <p>Crie a proposta de venda</p>
-  <h2>Passo 5 - Work</h2>
-  <p>Faça automação de retorno</p>
-  <h2>Passo 6 - Work</h2>
-  <p>Marque uma conversa</p>
-  <!-- Adicione mais passos, se necessário -->
-</div>
-
-<script src="scripts.js"></script>
+      <button class="tablinks" onclick="openTab(event, 'planejamento')">Planejamento Inicial</button>
+      <button class="tablinks" onclick="openTab(event, 'desenvolvimento')">Desenvolvimento da Loja</button>
+      <button class="tablinks" onclick="openTab(event, 'gestao')">Gestão de Produtos</button>
+      <button class="tablinks" onclick="openTab(event, 'marketing')">Marketing e Vendas</button>
+      <button class="tablinks" onclick="openTab(event, 'atendimento')">Atendimento ao Cliente</button>
+      <button class="tablinks" onclick="openTab(event, 'financeiro')">Financeiro</button>
+      <button class="tablinks" onclick="openTab(event, 'investlabore')">InvestLabore</button>
+    </div>
+  
     
+    
+
+    <!-------------------------------------Inicio do conteudo------------------------------------->
+    <div class="content">
+
+      
+      <div id="planejamento" class="tabcontent">
+        <h2>Definição do Nicho e Produtos</h2>
+      <p>Escolha o nicho de mercado e selecione os produtos digitais que serão vendidos.Análise de mercado.</p>
+      <h2>Estratégia de Negócio</h2>
+      <p>Proposta de valor.
+        Definição de preços.
+        Estratégias de marketing digital.</p>
+        <!-- Mais conteúdo relevante para o planejamento -->
+      </div>
+  
+      <div id="desenvolvimento" class="tabcontent">
+      <h2>Escolha da Tecnologia utilizada</h2>
+      <p>Escolha da plataforma de e-commerce (ex: Shopify).
+        Configuração inicial da loja virtual.</p>
+        <h2>Automações e integrações</h2>
+      <p>Configuração de opções de pagamento.
+        Implementação de medidas de segurança.</p>
+        <!-- Mais conteúdo relevante para o desenvolvimento -->
+      </div>
+      
+      <div id="gestao" class="tabcontent">
+        <h2>Criação e Organização de Produtos</h2>
+        <p>Crie e organize produtos digitais em categorias.</p>
+      <h2>Criação de Conteúdo</h2>
+      <p>Desenvolvimento de conteúdo relevante.
+        Otimização do conteúdo para SEO.</p>
+      <!-- Mais conteúdo relevante para a gestão de produtos -->
+    </div>
+  
+    <div id="marketing" class="tabcontent">
+      <h2>Marketing Digital</h2>
+      <p>Gerencie mídias sociais e execute campanhas de marketing.</p>
+      <h2>Monitoramento e Análise</h2>
+      <p>Monitoramento de métricas de desempenho.
+        Análise de dados para tomada de decisões.</p>
+        <!-- Mais conteúdo relevante para o marketing e vendas -->
+      </div>
+      
+      <div id="atendimento" class="tabcontent">
+      <h2>Suporte ao Cliente</h2>
+      <p>Ofereça suporte ao cliente e implemente estratégias de pós-venda.Configuração de canais de suporte.
+        Treinamento da equipe de suporte.</p>
+      <h2>Pós-Venda e Fidelização</h2>
+      <p>Estratégias de manutenção do relacionamento com clientes.
+        Implementação de programas de fidelidade.</p>
+        <!-- Mais conteúdo relevante para o atendimento ao cliente -->
+      </div>
+      
+      <div id="financeiro" class="tabcontent">
+        <h2>Financeiro</h2>
+        <!-- Conteúdo da aba financeiro -->
+      </div>
+  
+    <div id="investlabore" class="tabcontent">
+      <h2>InvestLabore</h2>
+      <!-- Conteúdo da aba InvestLabore -->
+    </div>
+    
+    
+  </div>
+    <!---------------------------------------Fim do conteúdo--------------------------------------->
+  
+  </div>
+
+  <script src="sistema.js"></script>
+  
 </body>
 </html>
