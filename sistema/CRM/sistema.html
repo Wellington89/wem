@@ -12,6 +12,7 @@
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 <link rel="stylesheet" href="sistema.css">
+
 </head>
 <body>
 
@@ -84,17 +85,57 @@
         Definição de preços.
         Estratégias de marketing digital.</p>
         <!-- Mais conteúdo relevante para o planejamento -->
+        <h3> Use o seguinte prompt: crie uma estratégia de (coloque aqui o produto ou serviço)</h3>
+        <div class="modal fade" id="iframeModal3" tabindex="-1" aria-labelledby="iframeModalLabel" aria-hidden="true">
+          <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="iframeModalLabel">Iframe Modal</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                <iframe src="https://anonchatgpt.com/" width="100%" height="500" frameborder="0"></iframe>
+              </div>
+            </div>
+          </div>
+        </div>
+        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#iframeModal3" id="iframeModalButton2">
+          Monte a Estratégia
+        </button>
+
       </div>
   
 <!-------------------------------------------------DESENVOLVIMENTO------------------------------------------------->      
       <div id="desenvolvimento" class="tabcontent">
       <h2>Escolha da Tecnologia utilizada</h2>
       <p>Escolha da plataforma de e-commerce (ex: Shopify).
-        Configuração inicial da loja virtual.</p>
+        Configuração inicial da loja virtual, página ou equivalente.</p>
+        <ul>
+          <li>Linguagens de Programação: Escolha a linguagem de programação mais adequada para o seu projeto. Por exemplo, para desenvolvimento web, você pode considerar HTML, CSS e JavaScript. Para aplicativos móveis, pode ser Java (Android) ou Swift (iOS).</li>
+          <li>Frameworks e Bibliotecas: Utilize frameworks como o React, Angular ou Vue.js para desenvolvimento web front-end, e frameworks como o Django ou Ruby on Rails para desenvolvimento web back-end.</li>
+          <li>Ambiente de Desenvolvimento Integrado (IDE): Escolha um IDE, como o Visual Studio Code, o IntelliJ IDEA ou o Xcode, para codificar, depurar e testar seu código de maneira eficiente.</li>
+          <li>Controle de Versão: Use sistemas de controle de versão como o Git, juntamente com plataformas como GitHub ou GitLab, para gerenciar e colaborar no código-fonte do seu projeto.</li>
+          <li>Hospedagem e Servidores: Para hospedar seu sistema, considere opções como AWS, Microsoft Azure, Heroku ou DigitalOcean, dependendo das necessidades do seu projeto.</li>
+          <li>Bancos de Dados: Escolha um banco de dados adequado, como MySQL, PostgreSQL ou MongoDB, para armazenar e gerenciar dados relevantes para o seu sistema.</li>
+          <li>Testes e Depuração: Utilize ferramentas de testes automatizados, como o Jest para JavaScript, e depuradores para garantir a qualidade do seu código.</li>
+          <li>Documentação: Mantenha uma documentação clara e abrangente usando ferramentas como o Swagger ou o Markdown, para ajudar outros desenvolvedores a entenderem o funcionamento do seu sistema.</li>
+          <li>Plataformas: Uso de plataformas lowcode e nocode para acelerar o processo de desenvolvimento.</li>
+        </ul>
         <h2>Automações e integrações</h2>
       <p>Configuração de opções de pagamento.
         Implementação de medidas de segurança.</p>
+        <ul>
+          <li>Automação de Marketing: Plataformas como o HubSpot, o Mailchimp ou o Marketo permitem automatizar campanhas de marketing, segmentação de público e envio de e-mails com base em comportamentos específicos.</li>
+          <li>Automação de Processos: Ferramentas como o Zapier, o Integromat ou o Microsoft Power Automate permitem conectar diferentes aplicativos e automatizar fluxos de trabalho entre eles.</li>
+          <li>Chatbots: Plataformas como o Chatfuel, o ManyChat ou o Dialogflow permitem criar chatbots que podem automatizar interações com os usuários, responder perguntas frequentes e direcionar os clientes para as informações certas.</li>
+          <li>Automação de Atendimento ao Cliente: Ferramentas como o Zendesk ou o Freshdesk podem automatizar o direcionamento de tickets de suporte, respostas automáticas e o roteamento adequado das solicitações dos clientes.</li>
+          <li>Automação de E-commerce: Para lojas online, plataformas como o Shopify ou o WooCommerce oferecem recursos de automação para gerenciar estoque, pedidos, envio e promoções.</li>
+          <li>Automação de Tarefas Internas: Use ferramentas como o Trello, o Asana ou o Notion para criar fluxos de trabalho internos automatizados, como aprovações de projetos e gerenciamento de tarefas.</li>
+          <li>Análise de Dados Automatizada: Utilize ferramentas como o Google Data Studio ou o Tableau para criar painéis de análise automatizados que atualizam em tempo real.</li>
+        </ul>
         <!-- Mais conteúdo relevante para o desenvolvimento -->
+        
+
       </div>
 <!-------------------------------------------------GESTÃO DE PRODUTOS------------------------------------------------->      
       <div id="gestao" class="tabcontent">
@@ -109,9 +150,71 @@
     <div id="marketing" class="tabcontent">
       <h2>Marketing Digital</h2>
       <p>Gerencie mídias sociais e execute campanhas de marketing.</p>
+
+<!-----------------------------------------------ÍCONES DE REDES SOCIAIS----------------------------------------------->      
+<div class="iconssocials">
+<img src="https://cdn-icons-png.flaticon.com/128/3256/3256011.png" alt="">
+<img src="https://cdn-icons-png.flaticon.com/128/3256/3256016.png" alt="">
+<img src="https://cdn-icons-png.flaticon.com/128/3938/3938037.png" alt="">
+<img src="https://cdn-icons-png.flaticon.com/128/3256/3256013.png" alt="">
+<img src="https://cdn-icons-png.flaticon.com/128/3291/3291655.png" alt="">
+<img src="https://cdn-icons-png.flaticon.com/128/3291/3291695.png" alt="">
+<img src="https://cdn-icons-png.flaticon.com/128/3621/3621450.png" alt="">
+<img src="https://cdn-icons-png.flaticon.com/128/3621/3621457.png" alt="">
+<img src="https://cdn-icons-png.flaticon.com/128/4926/4926502.png" alt="">
+<img src="https://cdn-icons-png.flaticon.com/128/3938/3938118.png" alt="">
+<img src="https://cdn-icons-png.flaticon.com/128/4926/4926554.png" alt="">
+<img src="https://cdn-icons-png.flaticon.com/128/4926/4926549.png" alt="">
+<img src="https://cdn-icons-png.flaticon.com/128/4926/4926526.png" alt="">
+<img src="https://cdn-icons-png.flaticon.com/128/3955/3955099.png" alt="">
+<img src="https://cdn-icons-png.flaticon.com/128/3291/3291651.png" alt="">
+<img src="https://cdn-icons-png.flaticon.com/128/3955/3955111.png" alt="">
+<img src="https://cdn-icons-png.flaticon.com/128/3938/3938109.png" alt="">
+<img src="https://cdn-icons-png.flaticon.com/128/3291/3291648.png" alt="">
+<img src="https://cdn-icons-png.flaticon.com/128/3291/3291649.png" alt="">
+<img src="https://cdn-icons-png.flaticon.com/128/3291/3291656.png" alt="">
+<img src="https://cdn-icons-png.flaticon.com/128/3291/3291658.png" alt="">
+<img src="https://cdn-icons-png.flaticon.com/128/3291/3291659.png" alt="">
+<img src="https://cdn-icons-png.flaticon.com/128/3256/3256024.png" alt="">
+<img src="https://cdn-icons-png.flaticon.com/128/3256/3256034.png" alt="">
+<img src="https://cdn-icons-png.flaticon.com/128/3992/3992640.png" alt="">
+</div>
+<!-----------------------------------------------ÍCONES DE REDES SOCIAIS----------------------------------------------->
+      
+
       <h2>Monitoramento e Análise</h2>
       <p>Monitoramento de métricas de desempenho.
         Análise de dados para tomada de decisões.</p>
+<!-------------------------------------------------Calculadora de ROI------------------------------------------------->
+<div id="conteudo-para-pdf">
+<div class="calculator">
+  <h1>Calculadora de ROI</h1>
+    <!-- Seus campos de entrada e resultado -->
+    
+    <label for="orcamento">Orçamento Mensal:</label>
+  <input type="number" id="orcamento" placeholder="Valor do orçamento mensal">
+  
+  <label for="cpc">CPC Esperado:</label>
+  <input type="number" id="cpc" placeholder="Custo por clique esperado">
+
+  <label for="taxa-conversao">Taxa de Conversão:</label>
+  <input type="number" id="taxa-conversao" placeholder="Taxa de conversão esperada">
+
+  <label for="ticket-medio">Ticket Médio:</label>
+  <input type="number" id="ticket-medio" placeholder="Valor do ticket médio">
+
+  <label for="taxa-lead-vendas">Taxa de Lead para Vendas:</label>
+  <input type="number" id="taxa-lead-vendas" placeholder="Taxa de conversão de lead para vendas">
+
+  <button onclick="calcularROI()">Calcular ROI</button>
+  <button onclick="limparDados()">Limpar Dados</button>
+  
+  
+  <div id="resultado"></div>
+</div>
+</div>
+<!-------------------------------------------------Calculadora de ROI------------------------------------------------->
+
         <!-- Mais conteúdo relevante para o marketing e vendas -->
       </div>
 <!----------------------------------------------------ATENDIMENTO---------------------------------------------------->           
@@ -140,8 +243,7 @@
     <!---------------------------------------Fim do conteúdo--------------------------------------->
   
   </div>
-
-  <script src="sistema.js"></script>
   
+  <script src="sistema.js"></script>
 </body>
 </html>
