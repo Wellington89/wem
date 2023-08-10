@@ -24,7 +24,7 @@
         </a>
     </div>
       <button class="tablinks" onclick="openTab(event, 'planejamento')">Planejamento Inicial</button>
-      <button class="tablinks" onclick="openTab(event, 'desenvolvimento')">Desenvolvimento da Loja</button>
+      <button class="tablinks" onclick="openTab(event, 'desenvolvimento')">Desenvolvimento </button>
       <button class="tablinks" onclick="openTab(event, 'gestao')">Gestão de Produtos</button>
       <button class="tablinks" onclick="openTab(event, 'marketing')">Marketing e Vendas</button>
       <button class="tablinks" onclick="openTab(event, 'atendimento')">Atendimento ao Cliente</button>
@@ -38,9 +38,46 @@
     <!-------------------------------------Inicio do conteudo------------------------------------->
     <div class="content">
 
-      
+<!-------------------------------------------------PLANEJAMENTO INICIAL------------------------------------------------->      
       <div id="planejamento" class="tabcontent">
         <h2>Definição do Nicho e Produtos</h2>
+
+<!-- Modal com iframe -->
+<div class="modal fade" id="iframeModal" tabindex="-1" aria-labelledby="iframeModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="iframeModalLabel">Iframe Modal</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <iframe src="https://www-br.spyfu.com/overview" width="100%" height="500" frameborder="0"></iframe>
+      </div>
+    </div>
+  </div>
+</div>
+<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#iframeModal" id="iframeModalButton">
+  Busca por termo
+</button>
+
+<div class="modal fade" id="iframeModal2" tabindex="-1" aria-labelledby="iframeModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="iframeModalLabel">Iframe Modal</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <iframe src="https://www.similarweb.com/" width="100%" height="500" frameborder="0"></iframe>
+      </div>
+    </div>
+  </div>
+</div>
+<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#iframeModal2" id="iframeModalButton2">
+  Busca por página
+</button>
+<!-- Modal com iframe -->
+
       <p>Escolha o nicho de mercado e selecione os produtos digitais que serão vendidos.Análise de mercado.</p>
       <h2>Estratégia de Negócio</h2>
       <p>Proposta de valor.
@@ -49,6 +86,7 @@
         <!-- Mais conteúdo relevante para o planejamento -->
       </div>
   
+<!-------------------------------------------------DESENVOLVIMENTO------------------------------------------------->      
       <div id="desenvolvimento" class="tabcontent">
       <h2>Escolha da Tecnologia utilizada</h2>
       <p>Escolha da plataforma de e-commerce (ex: Shopify).
@@ -58,7 +96,7 @@
         Implementação de medidas de segurança.</p>
         <!-- Mais conteúdo relevante para o desenvolvimento -->
       </div>
-      
+<!-------------------------------------------------GESTÃO DE PRODUTOS------------------------------------------------->      
       <div id="gestao" class="tabcontent">
         <h2>Criação e Organização de Produtos</h2>
         <p>Crie e organize produtos digitais em categorias.</p>
@@ -67,7 +105,7 @@
         Otimização do conteúdo para SEO.</p>
       <!-- Mais conteúdo relevante para a gestão de produtos -->
     </div>
-  
+<!-------------------------------------------------MARKETING E VENDAS------------------------------------------------->      
     <div id="marketing" class="tabcontent">
       <h2>Marketing Digital</h2>
       <p>Gerencie mídias sociais e execute campanhas de marketing.</p>
@@ -76,7 +114,7 @@
         Análise de dados para tomada de decisões.</p>
         <!-- Mais conteúdo relevante para o marketing e vendas -->
       </div>
-      
+<!----------------------------------------------------ATENDIMENTO---------------------------------------------------->           
       <div id="atendimento" class="tabcontent">
       <h2>Suporte ao Cliente</h2>
       <p>Ofereça suporte ao cliente e implemente estratégias de pós-venda.Configuração de canais de suporte.
@@ -86,12 +124,12 @@
         Implementação de programas de fidelidade.</p>
         <!-- Mais conteúdo relevante para o atendimento ao cliente -->
       </div>
-      
+<!----------------------------------------------------FINANCEIRO---------------------------------------------------->      
       <div id="financeiro" class="tabcontent">
         <h2>Financeiro</h2>
         <!-- Conteúdo da aba financeiro -->
       </div>
-  
+<!---------------------------------------------------INVESTLABORE--------------------------------------------------->       
     <div id="investlabore" class="tabcontent">
       <h2>InvestLabore</h2>
       <!-- Conteúdo da aba InvestLabore -->
