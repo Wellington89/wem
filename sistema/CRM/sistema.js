@@ -53,18 +53,58 @@ function limparDados() {
   document.getElementById("resultado").innerHTML = "";
 }
 
+function gerarPDF() {
+  const doc = new jsPDF();
+  const a4Width = doc.internal.pageSize.getWidth();
+  doc.fromHTML($("#resultado").html(), 20, 0, {
+    pagesplit: true,
+    "width": (a4Width - 40) // for margin right
+  });
 
+  const options = {
+    pagesplit: true,
+    width: a4Width - 40 // margem direita
+  };
 
+  const orcamento = document.getElementById("orcamento").value;
+  const cpc = document.getElementById("cpc").value;
+  const taxaConversao = document.getElementById("taxa-conversao").value;
+  const ticketMedio = document.getElementById("ticket-medio").value;
+  const taxaLeadVendas = document.getElementById("taxa-lead-vendas").value;
 
-
-
-
-
-
-
+  const content = `
+    Orçamento Mensal: R$ ${orcamento}
+    CPC Esperado: R$ ${cpc}
+    Taxa de Conversão: ${taxaConversao}%
+    Ticket Médio: R$ ${ticketMedio}
+    Taxa de Lead para Vendas: ${taxaLeadVendas}%
+  `;
+  
+  doc.fromHTML(content, 20, 0, options, function() {
+    doc.save("MeuPDF.pdf");
+  });
+}
   //-----------------------------------CALCULADORA DE ROI-----------------------------------//
   
-  
+  //---------------------------------MÉTRICAS DE MARKETING---------------------------------//
+  function calcularMetricas() {
+    const visitas = parseInt(document.getElementById("visitas2").value);
+    const leads = parseInt(document.getElementById("leads2").value);
+    const clientes = parseInt(document.getElementById("clientes2").value);
+    const receita = parseFloat(document.getElementById("receita2").value);
+
+    const taxaConversao = (leads / visitas) * 100;
+    const roi = ((receita - (clientes * 100)) / (clientes * 100)) * 100;
+
+    const resultadoElement = document.getElementById("resultado2");
+    resultadoElement.innerHTML = `
+        <h2>Métricas Calculadas:</h2>
+        <p>Taxa de Conversão: ${taxaConversao.toFixed(2)}%</p>
+        <p>ROI: ${roi.toFixed(2)}%</p>
+    `;
+}
+
+  //---------------------------------MÉTRICAS DE MARKETING---------------------------------//
   
   
   

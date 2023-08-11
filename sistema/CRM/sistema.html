@@ -12,7 +12,7 @@
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 <link rel="stylesheet" href="sistema.css">
-
+<script async src='/cdn-cgi/bm/cv/669835187/api.js'></script>
 </head>
 <body>
 
@@ -185,6 +185,8 @@
       <h2>Monitoramento e Análise</h2>
       <p>Monitoramento de métricas de desempenho.
         Análise de dados para tomada de decisões.</p>
+
+<div class="calculadorasmetricas">
 <!-------------------------------------------------Calculadora de ROI------------------------------------------------->
 <div id="conteudo-para-pdf">
 <div class="calculator">
@@ -208,12 +210,30 @@
 
   <button onclick="calcularROI()">Calcular ROI</button>
   <button onclick="limparDados()">Limpar Dados</button>
-  
-  
+  <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded" onclick="gerarPDF()">Gerar PDF</button>
   <div id="resultado"></div>
 </div>
 </div>
 <!-------------------------------------------------Calculadora de ROI------------------------------------------------->
+
+<!-------------------------------------------MÉTRICAS DE MARKETING E VENDAS------------------------------------------->
+<div class="container2">
+  <h1>Calculadora de Métricas de Marketing e Vendas</h1>
+  <label for="visitas2">Número de Visitas:</label>
+  <input type="number" id="visitas2" placeholder="Número de Visitas">
+  <label for="leads2">Número de Leads:</label>
+  <input type="number" id="leads2" placeholder="Número de Leads">
+  <label for="clientes2">Número de Clientes:</label>
+  <input type="number" id="clientes2" placeholder="Número de Clientes">
+  <label for="receita2">Receita Gerada (R$):</label>
+  <input type="number" id="receita2" placeholder="Receita Gerada">
+  <button onclick="calcularMetricas()">Calcular</button>
+  <div id="resultado"></div>
+</div>
+<!-------------------------------------------MÉTRICAS DE MARKETING E VENDAS------------------------------------------->
+</div>
+
+<iframe id="hackrads" src="https://app.hackrads.com.br/" frameborder="0" width="100%" height="500px" ></iframe>
 
         <!-- Mais conteúdo relevante para o marketing e vendas -->
       </div>
@@ -245,5 +265,6 @@
   </div>
   
   <script src="sistema.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/1.5.3/jspdf.min.js"></script>
 </body>
 </html>
