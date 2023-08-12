@@ -144,3 +144,23 @@ display: flex;
 #hackrads{
   margin-top: 20px;
 }
+.pdf-container {
+  width: 800px;
+  height: 500px;
+  border: 1px solid #ccc;
+  overflow: hidden;
+}
+
+table, th, td {
+  margin-top: 10px;
+  border: 1px solid black;
+}
+.calculadorasdeganho{
+  display: flex;
+}
+.row{
+  display: block;
+}
+.container{
+  display: block;
+}

@@ -108,4 +108,40 @@ function gerarPDF() {
   
   
   
+//---------------------------------------FINANCEIRO---------------------------------------//
+const calculaValorHora = () => {
+  let ganharMes = document.getElementById("ganharMes").value;
+  let qtHoras = document.getElementById("qtHoras").value;
+  let qtDias = document.getElementById("qtDias").value;
+  let qtFerias = document.getElementById("qtFerias").value;
+
+  let valorHora =
+    Math.round((ganharMes * 12) / (qtHoras * qtDias * 48 - qtFerias * 44)) + 3;
+
+  document.getElementById("valorHora").innerText =
+    "R$" + valorHora + ",00/hora";
+  console.log(valorHora);
+};
+
+document.getElementById("btnGerar").addEventListener("click", calculaValorHora);
+
+// Função para calcular o valor do projeto
+function calcularValorProjeto() {
+  var valorHora = parseFloat(document.getElementById("valorHora2").value);
+  var horasEstimadas = parseFloat(
+    document.getElementById("horasEstimadas2").value
+  );
+
+  if (isNaN(valorHora) || isNaN(horasEstimadas)) {
+    document.getElementById("resultado2").innerHTML = "Digite valores válidos.";
+    return;
+  }
+
+  var valorProjeto = valorHora * horasEstimadas;
+  document.getElementById("resultado2").innerHTML =
+    "Valor do Projeto: R$ " + valorProjeto.toFixed(2);
+}
+
+//---------------------------------------FINANCEIRO---------------------------------------//
+
 
