@@ -15,6 +15,8 @@ function openTab(evt, tabName) {
   evt.currentTarget.classList.add("active");
 }
 
+
+
 //-----------------------------------CALCULADORA DE ROI-----------------------------------//
 function calcularROI() {
   const orcamento = parseFloat(document.getElementById("orcamento").value);
