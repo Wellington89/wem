@@ -254,5 +254,13 @@ table, th, td {
     padding: 0px;
     padding: 20px;
   }
+  .content {
+    flex: 1;
+    margin-left: 150px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column; /* Para alinhar o conteúdo dentro do content */
+   
+  }
 }
   
