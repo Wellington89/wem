@@ -202,3 +202,14 @@ table, th, td {
 .equipe{
   margin-left: 250px;
 }
+
+
+@media only screen and (max-width: 768px) {
+  .desktop-menu {
+    display: none; /* Hide desktop menu */
+  }
+  
+  .mobile-menu {
+    display: block; /* Show mobile menu */
+  }
+}
