@@ -146,12 +146,12 @@ function calcularValorProjeto() {
   );
 
   if (isNaN(valorHora) || isNaN(horasEstimadas)) {
-    document.getElementById("resultado2").innerHTML = "Digite valores válidos.";
+    document.getElementById("resultado3").innerHTML = "Digite valores válidos.";
     return;
   }
 
   var valorProjeto = valorHora * horasEstimadas;
-  document.getElementById("resultado2").innerHTML =
+  document.getElementById("resultado3").innerHTML =
     "Valor do Projeto: R$ " + valorProjeto.toFixed(2);
 }
 
