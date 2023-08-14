@@ -198,3 +198,7 @@ table, th, td {
   /* Garante que a imagem preencha o espaço mantendo sua proporção */
   border-radius: 50%;
 }
+
+.equipe{
+  margin-left: 250px;
+}
